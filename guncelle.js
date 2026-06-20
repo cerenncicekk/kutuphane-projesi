@@ -16,7 +16,7 @@ connection.connect((err) => {
  //YENİ KOMUT: VERİ GÜNCELLEME (UPDATE)---
  const guncellemeSorgusu = 'UPDATE Kitaplar SET KitapID = ? where KitapID = ?'
 // sorguya sırasıyla: yeni kitap ID'sini (177) ve hangi kitabın değişeceğini (10) gönderiyoruz.
-connection.query(guncellemeSorgusu, [5, 16], (err, sonuc) => {
+connection.query(guncellemeSorgusu, [177, 10], (err, sonuc) => {
     if (err) throw err;
     console.log ('\n Kumarbaz Kitabının sayfa sayısı başarıyla güncellendi!');
 
